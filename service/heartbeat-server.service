@@ -1,0 +1,9 @@
+[Unit]
+Description=Heartbeat Server
+
+[Service]
+Environment=HEARTBEAT_PORT=8162
+ExecStart=/bin/deno run --allow-net --allow-env ./index.ts
+
+[Install]
+WantedBy=multi-user.target
