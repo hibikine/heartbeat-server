@@ -1,5 +1,9 @@
 # Heartbeat Server
 
+This is just a real-time heartbeat register server running on Deno.
+
+リアルタイムでPOSTで心拍数を受信して、その心拍数を返すだけのサーバーです。
+
 ## run 
 ```
 deno run --allow-net --allow-env ./index.ts
@@ -8,7 +12,7 @@ deno run --allow-net --allow-env ./index.ts
 HEARTBEAT_PORT=8888 deno run --allow-net --allow-env ./index.ts
 ```
 
-## test
+## usage
 ```
 deno run --allow-net --allow-env ./index.ts
 curl localhost:8162/heartbeat
